@@ -5,10 +5,11 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #333;
+    background-color: #CDCDCD; /* Ceramic */
 }
 
 header {
-    background: #4A2C2A;
+    background: #626D71; /* Slate */
     color: #fff;
     padding: 10px 0;
     display: flex;
@@ -19,7 +20,7 @@ header {
 
 header .logo img {
     height: 100px; /* Increased size */
-    width: auto; /* Maintain aspect ratio */
+    width: auto;
 }
 
 nav ul {
@@ -57,7 +58,7 @@ nav ul li a {
 }
 
 .btn {
-    background: #D4A55E;
+    background: #B38867; /* Coffee */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -73,6 +74,7 @@ nav ul li a {
 .menu h2, .about h2, .contact h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: #626D71; /* Slate */
 }
 
 .menu-items {
@@ -82,17 +84,30 @@ nav ul li a {
 }
 
 .menu-item {
-    background: #f4f4f4;
+    background: #DDBC95; /* Latte */
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
     width: 30%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido se apile en columna */
+    align-items: center; /* Centra el contenido */
+    text-align: center; /* Centra el texto */
+}
+
+.menu-item img {
+    width: 200px; /* Establece el ancho a 200px */
+    height: 300px; /* Establece la altura a 300px */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+    margin-bottom: 10px; /* Agrega espacio entre la imagen y el contenido */
 }
 
 .menu-item h3 {
     font-size: 1.5em;
     margin: 0 0 10px;
+    color: #B38867; /* Coffee */
 }
 
 .menu-item p {
@@ -101,13 +116,111 @@ nav ul li a {
 
 .menu-item span {
     font-weight: bold;
-    color: #D4A55E;
+    color: #626D71; /* Slate */
+    margin-top: 10px; /* Agrega espacio arriba del precio */
 }
 
 footer {
-    background: #4A2C2A;
+    background: #626D71; /* Slate */
     color: #fff;
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
 }
+
+/* Carrusel solo para index.html */
+#carousel {
+    position: relative;
+    width: 60%; /* Mantén el ancho del carrusel */
+    margin: 30px auto;
+    text-align: center;
+}
+
+#carousel .carousel {
+    position: relative;
+}
+
+#carousel .carousel-image {
+    width: 40%; /* Cambia el tamaño de la imagen a un 40% del carrusel */
+    height: auto;
+    margin: 0 auto; /* Centra la imagen dentro del carrusel */
+}
+
+#carousel button.carousel-prev, #carousel button.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#carousel button.carousel-prev {
+    left: 10px;
+}
+
+#carousel button.carousel-next {
+    right: 10px;
+}
+
+#carousel button.carousel-prev:hover, #carousel button.carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column; /* Cambia la dirección del header en pantallas móviles */
+        align-items: center; /* Centra los elementos */
+    }
+
+    header .logo img {
+        height: 80px; /* Ajusta el tamaño del logo en pantallas más pequeñas */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Pone los links en columna en lugar de fila */
+        align-items: center; /* Centra los links */
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaciado entre los enlaces */
+    }
+
+    nav ul li a {
+        font-size: 1.2em; /* Aumenta el tamaño de texto para mejorar la legibilidad */
+    }
+
+    .menu-items {
+        display: block;
+        text-align: center;
+    }
+
+    .menu-item {
+        width: 80%; /* Hace que los items del menú ocupen más espacio en móviles */
+        margin: 20px auto;
+    }
+
+    #carousel {
+        width: 90%; /* Ajusta el tamaño del carrusel en pantallas pequeñas */
+    }
+
+    #carousel .carousel-image {
+        width: 80%; /* Reduce el tamaño de las imágenes del carrusel */
+    }
+}
+
+
+
+
+
+
+
+

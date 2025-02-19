@@ -1,69 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr. Coffee</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="carousel.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="images/Mr. Coffee Logo.jpeg" alt="Mr. Coffee Logo">
+            <img src="images/Mr. Coffee Logo.jpeg" alt="Logo de Mr. Coffee">
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+<!--                 <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="contact.html">Contacto</a></li> -->
             </ul>
         </nav>
     </header>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h2>Welcome to Mr. Coffee</h2>
-            <p>Your perfect cup of coffee awaits!</p>
-            <a href="#menu" class="btn">View Menu</a>
+            <h2>Bienvenido a Mr. Coffee</h2>
+            <p>¡Tu taza de café perfecta te espera!</p>
         </div>
     </section>
 
-    <section id="menu" class="menu">
-        <h2>Our Menu</h2>
-        <div class="menu-items">
-            <div class="menu-item">
-                <h3>Espresso</h3>
-                <p>Strong and bold, our classic espresso.</p>
-                <span>$3.00</span>
-            </div>
-            <div class="menu-item">
-                <h3>Cappuccino</h3>
-                <p>Espresso with steamed milk and foam.</p>
-                <span>$4.50</span>
-            </div>
-            <div class="menu-item">
-                <h3>Latte</h3>
-                <p>Espresso with steamed milk and a light layer of foam.</p>
-                <span>$4.00</span>
-            </div>
+    <!-- Carrusel de Imágenes -->
+    <section id="carousel" class="carousel-container">
+        <div class="carousel">
+            <img src="https://picsum.photos/200/300?random=1" alt="Imagen 1" class="carousel-image">
         </div>
+        <button class="carousel-prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-next" onclick="moveSlide(1)">&#10095;</button>
     </section>
 
     <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>Mr. Coffee has been serving the finest coffee since 2023. We are passionate about delivering the best coffee experience to our customers.</p>
+        <h2>Sobre Nosotros</h2>
+        <p>Mr. Coffee ha estado sirviendo el mejor café desde 2025. Nos apasiona ofrecer la mejor experiencia de café a nuestros clientes.</p>
     </section>
 
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Visit us at: 123 Coffee Lane, Brew City, BC 12345</p>
+        <h2>Visítanos</h2>
+        <p>Querétaro</p>
         <p>Email: info@mrcoffee.com</p>
-        <p>Phone: (123) 456-7890</p>
+        <p>Teléfono: (123) 456-7890</p>
     </section>
 
     <footer>
-        <p>&copy; 2023 Mr. Coffee. All rights reserved.</p>
+        <p>&copy; 2025 Mr. Coffee. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Incluir el archivo JS -->
+    <script src="script.js"></script>
 </body>
 </html>
+
+
+
