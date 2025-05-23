@@ -1,63 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mr. Coffee</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="carousel.js" defer></script>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <img src="images/Mr. Coffee Logo.jpeg" alt="Logo de Mr. Coffee">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="menu.html">Menú</a></li>
-<!--                 <li><a href="about.html">Sobre Nosotros</a></li>
-                <li><a href="contact.html">Contacto</a></li> -->
-            </ul>
-        </nav>
+      <div class="logo">
+        <a href="https://cmandres1.github.io/MrCoffee/">
+          <img src="images/Mr. Coffee Logo.jpeg" alt="Logo de Mr. Coffee" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="promociones.html">Promociones</a></li>
+          <li><a href="privacidad.html">Aviso de Privacidad</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/mr.coffee.qro?igsh=MXVrNGIwdTdhb3RtcQ=="
+              target="_blank"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/share/18yGodxYWN/" target="_blank"
+              ><i class="fab fa-facebook"></i> Facebook</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Bienvenido a Mr. Coffee</h2>
-            <p>¡Tu taza de café perfecta te espera!</p>
-        </div>
+      <div class="hero-content">
+        <h2>Bienvenido a Mr. Coffee</h2>
+        <p>¡Despierta la elegancia de tu paladar!</p>
+      </div>
+    </section>
+
+    <section
+      id="video-section"
+      class="video-section"
+      style="text-align: center; margin: 2rem 0"
+    >
+      <video controls>
+        <source src="images/Promo Video.mp4" type="video/mp4" />
+        Tu navegador no soporta la etiqueta de video.
+      </video>
     </section>
 
     <!-- Carrusel de Imágenes -->
     <section id="carousel" class="carousel-container">
-        <div class="carousel">
-            <img src="https://picsum.photos/200/300?random=1" alt="Imagen 1" class="carousel-image">
-        </div>
-        <button class="carousel-prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="carousel-next" onclick="moveSlide(1)">&#10095;</button>
+      <div class="carousel">
+        <img
+          src="images/Mr. Coffee main.png"
+          alt="Imagen 1"
+          class="carousel-image"
+        />
+      </div>
+      <button class="carousel-prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="carousel-next" onclick="moveSlide(1)">&#10095;</button>
     </section>
 
     <section id="about" class="about">
-        <h2>Sobre Nosotros</h2>
-        <p>Mr. Coffee ha estado sirviendo el mejor café desde 2025. Nos apasiona ofrecer la mejor experiencia de café a nuestros clientes.</p>
+      <h2>Sobre Nosotros</h2>
+      <p>
+        Mr. Coffee ha estado sirviendo el mejor café desde 2021. Nos apasiona
+        ofrecer la mejor experiencia de café a nuestros clientes.
+      </p>
     </section>
 
     <section id="contact" class="contact">
-        <h2>Visítanos</h2>
-        <p>Querétaro</p>
-        <p>Email: info@mrcoffee.com</p>
-        <p>Teléfono: (123) 456-7890</p>
+      <h2>Visítanos</h2>
+      <p><b>Querétaro:</b> Monte Horeb 227 Col. La Loma C.P. 76116</p>
+      <p><b>Email:</b> mrcoffeeqro@gmail.com</p>
+      <p><b>WhatsApp:</b> 442 575-7618</p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Mr. Coffee. Todos los derechos reservados.</p>
+      <p>&copy; 2025 Mr. Coffee. Todos los derechos reservados.</p>
+      <a href="privacidad.html">Aviso de Privacidad</a>
     </footer>
 
     <!-- Incluir el archivo JS -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
-
-
-

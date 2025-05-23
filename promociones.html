@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menú - Mr Coffee</title>
+    <title>Promociones - Mr. Coffee</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -42,33 +42,27 @@
     </header>
 
     <main>
-      <!-- Menu Options -->
-      <section class="menu-section">
-        <a href="menu-coffee-time-snacks.html" class="menu-option">
-          <img
-            src="images/coffee-time-with-snack-logo-vector.jpg"
-            alt="Coffee Time Snacks"
-          />
-          <h2>Coffee Time Snacks</h2>
-        </a>
+      <h1 style="text-align: center; margin-top: 40px">Promociones</h1>
 
-        <a href="menu-drinks.html" class="menu-option">
-          <img
-            src="images/coffee-time-logo-with-black-coffee-vector.jpg"
-            alt="Drinks"
-          />
-          <h2>Bebidas</h2>
-        </a>
-        <a href="menu-renta.html" class="menu-option">
-          <img src="images/Renta I.png" alt="Drinks" />
-          <h2>Renta de Inmobiliario</h2>
-        </a>
+      <section id="promo-gallery" aria-label="Galería de promociones">
+        <img src="images/promociones/promo 1.jpg" alt="Promoción 1" />
+        <img src="images/promociones/promo 2.jpg" alt="Promoción 2" />
+        <img src="images/promociones/promo 3.jpg" alt="Promoción 3" />
+        <img src="images/promociones/promo 4.jpg" alt="Promoción 4" />
+        <img src="images/promociones/promo 5.jpg" alt="Promoción 5" />
       </section>
     </main>
+    <!-- Modal para imagen ampliada -->
+    <div id="img-modal" class="modal" style="display: none">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modal-img" />
+    </div>
 
-    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Mr Coffee. Todos los derechos reservados.</p>
+      <p>&copy; 2025 Mr. Coffee. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Incluir el archivo JS -->
+    <script src="script.js"></script>
   </body>
 </html>
